@@ -34,6 +34,6 @@ jobs:
     - name: Publish to GitHub Packages Apache Maven     
       run: |
         cat settings.xml
-        mvn deploy -s settings.xml
+        mvn deploy
       env:
         GITHUB_TOKEN: ${{ github.token }}
